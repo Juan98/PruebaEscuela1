@@ -1,0 +1,495 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Horarios CBTis</title>
+		<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+        
+        
+<!-------------------------------------------ESTILOS---------------------------------------->
+		<style type="text/css">
+			div.caja_transp {
+	background-color: #FFFFFF;
+	width: 98%;
+	border: 1px solid #000;
+	opacity: 0.6;
+	margin: 5px 5px;
+}
+			.tit1{
+				font-family: "Comic Sans MS", cursive;
+				font-size: 17px;
+				font-weight: bold;
+				vertical-align: middle;
+			}
+			.tit2{
+				font-family: "Arial Black", Gadget, sans-serif;
+				font-size: 19px;
+				font-weight: bold;
+				vertical-align: middle;
+			}
+			table.td,tr{
+				font-family:"Comic Sans MS", cursive;								
+				text-align:center;
+				background-color:#0CF;
+				border-color:#600;
+				font-weight:bold;				
+			}
+			.fondo1{
+				background-color:#F90;
+			}
+		</style>
+<!-------------------------------------------ESTILOS---------------------------------------->
+
+        
+		<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+		<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+	</head> 
+	<body> 
+
+
+<!--------------------------------PAGINA DE INICIO------------------------------------------->
+		<div data-role="page" id="page" style="background-image:url(imagenes/fonmad.jpg)">
+			<div data-role="header" data-theme="e" class="tit1">
+		    	<img src="imagenes/CBTIS 86.jpg" align="left" width="100px" height="150px">
+		      	<img src="imagenes/DGETI Azul.jpg" align="right" width="100px" height="150px">
+				<div align="center" style="width:70%; height:100px">Centro de Bachillerato Tecnológico industrial y de servicios No. 86</div>
+			</div>
+			<div data-role="content" style="background-image:url(imagenes/fondoprin.jpg)">
+				<a href="#semestres" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-rel="dialog">Horarios</a>
+	            <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Asesorias</a>
+				<a href="#page4" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Mapa escolar</a>		
+	            <a href="#page5" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Clubes</a>		          		
+	            <a href="#page7" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Calendario escolar</a>		
+			</div>
+			<div data-role="footer">
+				<h4>Ciclo escolar 2014-2015</h4>
+		        <div align="right"><a href="#creditos" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" data-rel="dialog">Acerca de...</a></div>
+			</div>
+		</div>
+<!--------------------------------PAGINA DE INICIO------------------------------------------->
+
+
+
+<!----------------------------------------GRUPOS------------------------------------------>
+		<div data-role="page" id="s1" style="background-image:url(imagenes/fonmad.jpg)">
+			<div data-role="header">
+				<div align="center" class="tit2">Horarios de Segundo Semestre</div>
+			</div>
+			<div data-role="content" class="fondo1">
+            	<div class="tit2">Elige el Grupo del Horario que Deseas Ver: </div>
+				<div data-role="collapsible-set" data-theme="b">
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>A (Contabilidad)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2A.jpg" width="100%">
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3 style="font-size:15px;">B (Producci&oacute;n Industrial de Alimentos)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2B.jpg" width="100%">
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>C (Mec&aacute;nica industrial)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2C.jpg" width="100%">
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>D (Mecatr&oacute;nica)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2D.jpg" width="100%">
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>E (Programaci&oacute;n)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2E.jpg" width="100%">
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>F (Logistica)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2F.jpg" width="100%">
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>G (Contabilidad)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2G.jpg" width="100%">			      		  
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>H (Producci&oacute;n Industrial de Alimentos)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2H.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>I (Producci&oacute;n Industrial de Alimentos)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2I.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>J (Mec&aacute;nica industrial)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2J.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>K (Mec&aacute;nica industrial)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2K.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>L (Programac&oacute;n)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Segundo/2L.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+		      	</div>	 					
+			</div>          
+			<div data-role="footer" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal" align="center">
+	               	<a href="#page" data-role="button" data-inline="true">Inicio</a>                
+	               	<a href="#semestres1" data-role="button" data-inline="true" data-rel="dialog">Elegir otro semestre</a>
+	            </div>
+			</div>
+		</div>
+        
+        <div data-role="page" id="s2" style="background-image:url(imagenes/fonmad.jpg)">
+			<div data-role="header">
+				<div align="center" class="tit2">Horarios de Cuarto Semestre</div>
+			</div>
+			<div data-role="content" class="fondo1">
+            	<div class="tit2">Elige el Grupo del Horario que Deseas Ver</div>
+				<div data-role="collapsible-set" data-theme="b">
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>A (Contabilidad)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4A.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>B (Producción Industrial de Alimentos)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4B.jpg" width="100%">                         	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>C (Mecánica Industrial)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4C.jpg" width="100%">                       	
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>D (Producción Industrial de Alimentos)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4D.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>E (Programación)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4E.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>F (Contabilidad)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4F.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>G (Producción Industrial de Alimentos)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4G.jpg" width="100%">                       	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>H (Mecánica Industrial)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4H.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>I (Mecánica Insutrial)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4I.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>J (Programación)</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Cuarto/4J.jpg" width="100%">                        	
+                        </div>
+		        	</div>			    	
+		      	</div>	 					
+			</div>          
+			<div data-role="footer" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal" align="center">
+                	<a href="#page" data-role="button" data-inline="true">Inicio</a>                
+                	<a href="#semestres2" data-role="button" data-inline="true" data-rel="dialog">Elegir otro semestre</a>
+                </div>
+			</div>
+		</div>
+		
+        <div data-role="page" id="s3" style="background-image:url(imagenes/fonmad.jpg)">
+			<div data-role="header">
+				<div align="center" class="tit2">Horarios de Sexto Semestre</div>
+			</div>
+			<div data-role="content" class="fondo1">
+            	<div class="tit2">Elige el grupo del Horario que Deseas Ver</div>
+				<div data-role="collapsible-set" data-theme="b">
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>A</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6A.jpg" width="100%">                      	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>B</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6B.jpg" width="100%">                         	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>C</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6C.jpg" width="100%">                         	
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>D</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6D.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>E</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6E.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>F</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6F.jpg" width="100%">                         	
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>G</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6G.jpg" width="100%">                         	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>H</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6H.jpg" width="100%">                        	
+                        </div>
+		        	</div>
+			    	<div data-role="collapsible" data-collapsed="true">
+			      		<h3>I</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6I.jpg" width="100%">                         	
+                        </div>
+		        	</div>
+                    <div data-role="collapsible" data-collapsed="true">
+			      		<h3>J</h3>
+			      		<div align="left" style="width:100%;">
+                        	<img src="imagenes/horarios/Clases/Sexto/6J.jpg" width="100%">                         	
+                        </div>
+		        	</div>			    	
+		      	</div>	 					
+			</div>          
+			<div data-role="footer" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal" align="center">
+                	<a href="#page" data-role="button" data-inline="true">Inicio</a>                
+                	<a href="#semestres3" data-role="button" data-inline="true" data-rel="dialog">Elegir otro semestre</a>
+                </div>
+			</div>
+		</div>
+<!---------------------------GRUPOS---------------------------->
+
+
+        
+		<div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-text="Atras">
+			<div data-role="header" align="center" class="tit2">
+				<b>Asesorías </b>
+			</div>
+			<div data-role="content" style="background-image:url(imagenes/fonmad.jpg)">	
+				<div style="width:95%"><img src="imagenes/horarios/Asesorias/asesoria.jpg" width="100%" height="600px" align="left"></div>	
+			</div>
+			<div data-role="footer">
+				<div align="center"><a href="#page" data-role="button" data-inline="true">Inicio</a></div>
+			</div>
+		</div>
+	
+		<div data-role="page" id="page4" data-add-back-btn="true" data-back-btn-text="Atras">
+			<div data-role="header" align="center" class="tit2">
+				<b>Mapa del C.B.T.i.s 86</b>
+			</div>
+			<div data-role="content" style="background-image:url(imagenes/fonmad.jpg)">	
+				<div style="width:95%"><img src="imagenes/mapa.jpg" width="100%" height="600px" align="left"></div>	
+			</div>
+			<div data-role="footer">
+				<div align="center"><a href="#page" data-role="button" data-inline="true">Inicio</a></div>
+			</div>
+		</div>
+	
+		<div data-role="page" id="page5" data-add-back-btn="true" data-back-btn-text="Atras">
+			<div data-role="header" align="center" class="tit2">
+				<b>Clubes</b>
+			</div>
+			<div data-role="content" style="background-image:url(imagenes/fonmad.jpg)">
+            <div class="caja_transp">	
+				<b>Basquetbol</b>
+                <ul>
+                <li>Lunes: 5:00 P.M - 7:00 P.M (Escuela)</li>
+                <li>Miercoles: 5:00 P.M - 7:00 P.M (Escuela)</li>
+                <li>Viernes: 5:00 P.M - 7:00 P.M (Escuela)</li>
+                <li>Sabado: 10:00 A.M - 1:00 P.M (Escuela)</li>
+                </ul>	
+                <p></p>
+                <b>Voleibol</b>
+                <ul>
+                <li>Lunes: 7:00 P.M - 9:00 P.M (Sección 39)</li>
+                <li>Martes: 7:00 P.M - 9:00 P.M (Sección 39)</li>
+                <li>Miercoles: 7:00 P.M - 9:00 P.M (Sección 39)</li>
+                <li>Jueves: 7:00 P.M - 9:00 P.M (Sección 39)</li>
+                <li>Viernes: 7:00 P.M - 9:00 P.M (Sección 39)</li>
+                <li>Sabado: 9:00 A.M - 11:00 P.M (Sección 39)</li>
+                </ul>                
+                <p></p>
+                <b>Danza</b>
+                <ul>                                
+                <li>Martes: 4:00 P.M - 6:00 P.M (Casa de la Cultura)</li>
+                <li>Jueves: 4:00 P.M - 6:00 P.M (Casa de la Cultura)</li>               
+                <li>Domingo: 10:00 A.M - 1:00 P.M (Casa de la Cultura)</li>
+                </ul>
+                 <b>Taekwondo</b>
+                <ul>                
+                <li>Martes: 5:00 P.M - 6:30 P.M (Escuela de Danza Cuauhnáhuac)</li>
+                <li>Miercoles: 5:00 P.M - 6:30 P.M (Escuela de Danza Cuauhnáhuac)</li>
+                <li>Jueves: 5:00 P.M - 6:30 P.M (Escuela de Danza Cuauhnáhuac)</li>                
+                <li>Sabado: 8:30 A.M - 10:30 P.M (Escuela de Danza Cuauhnáhuac)</li>                
+                </ul>
+                <b>Ajedrez</b>
+                <ul>
+                <li>Lunes: 2:00 P.M - 3:00 P.M (Escuela-Biblioteca)</li>
+                <li>Martes: 2:00 P.M - 3:00 P.M (Escuela-Biblioteca)</li>
+                <li>Miercoles: 2:00 P.M - 3:00 P.M (Escuela-Biblioteca)</li>
+                <li>Jueves: 2:00 P.M - 3:00 P.M (Escuela-Biblioteca)</li>
+                <li>Viernes: 2:00 P.M - 3:00 P.M (Escuela-Biblioteca)</li>                
+                </ul> 
+                <b>Futbol</b>
+                <ul>
+                <li>Martes: 4:00 P.M - 5:00 P.M (Escuela)</li>
+                <li>Jueves: 5:00 P.M - 5:00 P.M (Escuela)</li>
+                </ul> 
+                </div>
+                </div>
+			</div>
+			<div data-role="footer">
+				<div align="center"><a href="#page" data-role="button" data-inline="true">Inicio</a></div>
+			</div>
+		</div>
+	
+		<div data-role="page" id="page7" style="background-image:url(imagenes/fonmad.jpg)" data-add-back-btn="true" data-back-btn-text="Atras">
+			<div data-role="header">
+				<div align="center" class="tit2">Calendario Escolar</div>
+			</div>
+			<div data-role="content" align="center">	
+				<div style="width:95%"><img src="imagenes/calendario SEP.jpg" width="100%" height="400" align="left"></div>
+			</div>
+			<div data-role="footer">
+				<div align="center"><a href="#page" data-role="button" data-inline="true">Inicio</a></div>
+			</div>
+		</div>
+	
+		
+	
+<!------CUADROS DE DIALOGO------CUADROS DE DIALOGO------CUADROS DE DIALOGO------CUADROS DE DIALOGO------>
+		<div data-role="page" id="semestres" >
+			<div data-role="header" >
+				<div align="center" class="tit2">Elige el Semestre de los <br> Horarios que Deseas Ver</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" align="center">
+                	<a href="#s1" data-theme="e" data-role="button" data-inline="true">2°</a> 
+                    <a href="#s2" data-role="button" data-inline="true">4°</a> 
+                    <a href="#s3" data-theme="e" data-role="button" data-inline="true">6°</a> 
+                    <a href="#page"  data-role="button" data-inline="true">Cancelar</a> 
+                </div>
+			</div>
+		</div>
+        
+        <div data-role="page" id="semestres1">
+			<div data-role="header">
+				<div align="center" class="tit1">Elige el semestre que de los <br> horarios que deseas ver</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" align="center">
+                	<a href="#s1" data-theme="e" data-role="button" data-inline="true">2°</a> 
+                    <a href="#s2" data-role="button" data-inline="true">4°</a> 
+                    <a href="#s3" data-theme="e" data-role="button" data-inline="true">6°</a> 
+                    <a href="#s1" data-role="button" data-inline="true">Cancelar</a> 
+                </div>
+			</div>
+		</div>
+        
+        <div data-role="page" id="semestres2">
+			<div data-role="header">
+				<div align="center" class="tit1">Elige el semestre que de los <br> horarios que deseas ver</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" align="center">
+                	<a href="#s1" data-theme="e" data-role="button" data-inline="true">2°</a> 
+                    <a href="#s2" data-role="button" data-inline="true">4°</a> 
+                    <a href="#s3" data-theme="e" data-role="button" data-inline="true">6°</a> 
+                    <a href="#s2" data-role="button" data-inline="true">Cancelar</a> 
+                </div>
+			</div>
+		</div>
+        
+        <div data-role="page" id="semestres3">
+			<div data-role="header">
+				<div align="center" class="tit1">Elige el semestre que de los <br> horarios que deseas ver</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" align="center">
+                	<a href="#s1" data-theme="e" data-role="button" data-inline="true">2°</a> 
+                    <a href="#s2" data-role="button" data-inline="true">4°</a> 
+                    <a href="#s3" data-theme="e" data-role="button" data-inline="true">6°</a>  
+                    <a href="#s3" data-role="button" data-inline="true">Cancelar</a> 
+                </div>
+			</div>
+		</div>
+                		
+		<div data-role="page" id="creditos">
+			<div data-role="header">
+				<h1>Desarrollado Por: </h1>
+			</div>
+			<div data-role="content" style="background-image:url(imagenes/fonmad.jpg)">	
+				<b><ul>
+                <li> Juan Ángel Hernández Zaragoza</li>
+                <li>Gabriel Maldonado Romero</li>
+                <li>Ariana Rosa López Hernández</li>
+                <li>María Concepción Sánchez López</li>
+                <li>Mayte López Montes</li>
+                <li>María Fernanda Hernández Galindo</li>
+                </ul></b>		
+			</div>
+			<div data-role="footer">
+				<h4>Lic. David Nieto López</h4>
+			</div>
+		</div>
+<!------CUADROS DE DIALOGO------CUADROS DE DIALOGO------CUADROS DE DIALOGO------CUADROS DE DIALOGO------>
+	
+	</body>
+</html>
+		
